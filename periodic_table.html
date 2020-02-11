@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<head>
+  <style>
+  .textcenter{
+    text-align:center;
+    font-size:45px;
+    margin-top:100px;
+    margin-bottom:50px;
+    
+  }
+  
+  .mainleft{
+    display:flex;
+    flex-direction:row;
+  }
+  .cornerleft{
+    display:flex;
+    flex-direction:column;
+    
+  }
+  .cornerleft > div {
+    border:2px black solid;
+    background-color:#009688;
+    height:40px;
+    width:40px;
+    padding:4px;
+    margin-left:100px;
+    margin-top:10px;
+    }
+  #first{
+    background-color:#6D4C41;
+    text-align:center;
+    color:white;
+    font-size:30px;
+    
+  }
+  .left{
+    display:flex;
+    flex-direction:column;
+    margin-top:60px;
+  }
+  .left > div {
+    border:2px black solid;
+    background-color:#F50057;
+    height:40px;
+    width:40px;
+    padding:4px;
+    margin-left:20px;
+    margin-top:10px;
+    }
+  
+  
+  .leftmiddle{
+    display:flex;
+    flex-direction:column;
+    margin-top:310px;
+  }
+  .leftmiddle > div {
+    border:4px black solid;
+    background-color:#FCE4EC;
+    height:40px;
+    width:40px;
+    padding:1px;
+    margin-left:20px;
+    margin-top:10px;
+    }
+  .bigblock{
+    border:2px black solid;
+    background-color:#4CAF50;
+    height:120px;
+    width:120px;
+    margin-top:20px;
+    margin-left:10px;   
+  }
+  #brown{
+    background-color:#D81B60;
+  }
+  p{
+    text-align:right;
+    margin:5px;
+  }
+  h3{
+    margin:5px;
+    font-size:48px;
+  }
+  .orange{
+    margin-top:58px;
+  }
+  #green{
+    background-color:#00C853 
+  }
+  .middle1{
+    display:flex;
+    flex-direction:column;
+  }
+  .middle1 > div {
+    border:2px black solid;
+    background-color:#3F51B5;
+    height:40px;
+    width:40px;
+    padding:4px;
+    margin-left:10px;
+    margin-top:10px;
+    }
+  .middle2  {
+    display:flex;
+    flex-direction:column;
+  }
+  .middle2 > div {
+    border:2px black solid;
+    background-color:#3F51B5;
+    height:40px;
+    width:40px;
+    padding:4px;
+    margin-left:10px;
+    margin-top:10px;
+    }
+  
+  .middle3{
+    display:flex;
+    flex-direction:column;
+  }
+  .middle3 > div {
+    border:2px black solid;
+    background-color:#3F51B5;
+    height:40px;
+    width:40px;
+    padding:4px;
+    margin-left:10px;
+    margin-top:10px;
+    }
+  
+  .middle4{
+    display:flex;
+    flex-direction:column;
+  }
+  .middle4 > div {
+    border:2px black solid;
+    background-color:#3F51B5;
+    height:40px;
+    width:40px;
+    padding:4px;
+    margin-left:10px;
+    margin-top:10px;
+    
+    }
+  .middle5{
+    display:flex;
+    flex-direction:column;
+  }
+  .middle5 > div {
+    border:2px black solid;
+    background-color:#3F51B5;
+    height:40px;
+    width:40px;
+    padding:4px;
+    margin-left:10px;
+    margin-top:10px;
+    
+    }
+  .middle6{
+    display:flex;
+    flex-direction:column;
+  }
+  .middle6 > div {
+    border:2px black solid;
+    background-color:#3F51B5;
+    height:40px;
+    width:40px;
+    padding:4px;
+    margin-left:10px;
+    margin-top:10px;
+    
+    }
+  .middle7{
+    display:flex;
+    flex-direction:column;
+  }
+  .middle7 > div {
+    border:2px black solid;
+    background-color:#3F51B5;
+    height:40px;
+    width:40px;
+    padding:4px;
+    margin-left:10px;
+    margin-top:10px;
+    
+    }
+  .middle8{
+    display:flex;
+    flex-direction:column;
+  }
+  .middle8 > div {
+    border:2px black solid;
+    background-color:#3F51B5;
+    height:40px;
+    width:40px;
+    padding:4px;
+    margin-left:10px;
+    margin-top:10px;
+    
+    }
+  .middle9{
+    display:flex;
+    flex-direction:column;
+  }
+  .middle9 > div {
+    border:2px black solid;
+    background-color:#3F51B5;
+    height:40px;
+    width:40px;
+    padding:4px;
+    margin-left:10px;
+    margin-top:10px;
+     }
+  .all{
+    display:flex;
+    flex-direction:rows;
+    margin-top:55px;
+    }
+  .rightside{
+    display:flex;
+    flex-direction:column;
+  }
+  .right1{
+    display:flex;
+    flex-direction:rows;
+  }
+  .right1 > div {
+    border:2px black solid;
+    background-color:#F44336;
+    height:40px;
+    width:40px;
+    padding:4px;
+    margin-left:10px;
+    margin-top:10px;
+    }
+  .right2{
+    display:flex;
+    flex-direction:row;
+  }
+  .right2 > div {
+    border:2px black solid;
+    background-color:#F44336;
+    height:40px;
+    width:40px;
+    padding:4px;
+    margin-left:10px;
+    margin-top:10px;
+    }
+  .right3{
+    display:flex;
+    flex-direction:row;
+  }
+  .right3 > div {
+    border:2px black solid;
+    background-color:#F44336;
+    height:40px;
+    width:40px;
+    padding:4px;
+    margin-left:10px;
+    margin-top:10px;
+    }
+  .right4{
+    display:flex;
+    flex-direction:row;
+  }
+  .right4 > div {
+    border:2px black solid;
+    background-color:#F44336;
+    height:40px;
+    width:40px;
+    padding:4px;
+    margin-left:10px;
+    margin-top:10px;
+    }
+  
+  .right5{
+    display:flex;
+    flex-direction:row;
+  }
+  .right5 > div {
+    border:2px black solid;
+    background-color:#F44336;
+    height:40px;
+    width:40px;
+    padding:4px;
+    margin-left:10px;
+    margin-top:10px;
+    }
+  .text{
+    text-align:center;
+    font-size:25px;
+  }
+  #dark{
+    background-color:#5D4037;
+  }
+  #purple{
+    background-color:#7B1FA2;
+  }
+  .cornerright{
+    display:flex;
+    flex-direction:column;
+    
+   }
+  .cornerright > div {
+    border:2px black solid;
+    background-color:#FFC107;
+    height:40px;
+    width:40px;
+    margin-left:10px;
+    margin-top:9.5px;
+    padding:4px;
+  }
+  #la{
+    color:white;
+      text-align:center;
+  }
+  #am{
+    text-align:center;
+  }
+  .bottomcenter1{
+    display:flex;
+    flex-direction:row;
+    
+  }
+  .bottomcenter1 > div{
+    height:30px;
+    width:30px;
+    background-color:#2E7D32;
+    border:3px solid #1B5E20 ;
+  }
+  .bottom{
+    display:flex;
+    flex-direction:column;
+    
+  }
+  .bottomcenter2{
+    display:flex;
+    flex-direction:row;
+   }
+  .bottomcenter2 > div{
+    height:30px;
+    width:30px;
+    background-color:#4CAF50;
+    border:3px solid #1B5E20 ;
+   }
+  .align{
+    margin-top:500px;
+  }
+  </style>
+</head>
+<body>
+  <div class="textcenter">THE PERIODIC TABLE OF ELEMENTS</div>
+  
+ <div class="mainleft">
+  <div class="cornerleft">
+    <div id="first">H1</div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </div> 
+  <div class="left">
+    <div class="text">4</div>
+    <div class="text">12</div>
+     <div class="text">20</div>
+    <div class="text">38</div>
+     <div class="text">56</div>
+    <div class="text">88</div>
+  </div>
+  <div class="leftmiddle">
+    <div></div>
+    <div></div>
+  </div>
+  <div class="bigblock">
+    <div><p class ="num">14</p><h3>Si</h3> &nbsp Silicon
+   </div>
+    <div class="all">
+    <div class="middle1">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+     </div>
+    <div class="middle2">
+     <div></div>
+     <div></div>
+     <div></div>
+     <div></div>
+    </div>
+    <div class="middle3">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    </div>
+    <div class="middle4">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    </div>
+   <div class="middle5">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    </div>
+    <div class="middle6">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    </div>
+   <div class="middle7">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    </div>
+   <div class="middle8">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    </div>
+   <div class="middle9">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    </div>
+  </div>
+   </div>
+   <div class="align"> 
+   <div class="bottom">
+   <div class="bottomcenter1">
+    <div  id="la">La</div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div> 
+    <div></div> 
+    <div></div> 
+  </div>
+   <div class="bottomcenter2">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div id="am">Am</div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div> 
+    <div></div> 
+    <div>No</div>  
+  </div>
+  </div>
+ </div> 
+
+ <div class="rightside"> 
+    <div class="orange">
+    <div class="right1">
+     <div id="purple"></div>
+      <div id="green"></div>
+      <div id="green"></div>
+      <div id="green"></div>
+      <div id="brown"></div>
+    </div>
+   <div class="right2">
+     <div></div>
+     <div id="purple"></div>
+     <div id="green"></div>
+     <div id="green"></div>
+     <div id="brown"></div>
+     </div>
+     <div class="right3">
+      <div></div>
+      <div id="purple"></div>
+      <div id="purple"></div>
+      <div id="green"></div>
+      <div id="brown"></div>
+     </div>
+     <div class="right4">
+     <div></div>
+     <div></div>
+     <div id="purple"></div>
+     <div id="purple"></div>
+     <div id="brown"></div>
+     </div>  
+     <div class="right5">
+     <div></div>
+      <div></div>
+      <div></div>
+      <div id="purple"></div>
+      <div id="brown"></div>
+      </div> 
+      <div class="right5">
+      <div id="dark"></div>
+      <div id="dark"></div>
+      <div id="dark"></div>
+      <div id="dark"></div>
+      <div id="dark"></div>
+      </div>  
+     </div>   
+   </div> 
+     <div class="cornerright">
+         <div></div>
+         <div></div>
+         <div></div>
+         <div></div>
+         <div></div>
+         <div></div>
+         <div id="dark"></div>
+       </div>
+   
+       </body>  
+  
+    
+    
+  
